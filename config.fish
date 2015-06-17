@@ -1,3 +1,4 @@
+set PATH $PATH /Applications/Postgres.app/Contents/Versions/9.3/bin
 set PATH ~/.rbenv/bin $PATH
 
 # work-around for rbenv's `rbenv init` installation step
