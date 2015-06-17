@@ -127,14 +127,9 @@ set nowb
 
 " Custom Settings _____________________________________________________________
 
-so ~/.vim/settings.vim
+" so ~/.vim/settings.vim
 
 
-" Un-organized settings _______________________________________________________
-
-" Use the Solarized Dark theme
-set background=dark
-colorscheme solarized
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace()
@@ -155,3 +150,17 @@ if has("autocmd")
 	" Treat .json files as .js
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
+
+
+" PLUGINS
+" Using vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'altercation/vim-colors-solarized'
+Plug 'tpope/vim-fugitive'
+Plug 'gregsexton/gitv'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+call plug#end()
+
+set background=dark
+colorscheme solarized
