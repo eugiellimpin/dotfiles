@@ -180,3 +180,6 @@ autocmd VimEnter * wincmd p
 
 set background=dark
 colorscheme solarized
+
+" Do not use fish
+set shell=/bin/bash
