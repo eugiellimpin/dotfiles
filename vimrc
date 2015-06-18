@@ -155,6 +155,7 @@ endif
 " PLUGINS
 " Using vim-plug
 call plug#begin('~/.vim/plugged')
+
 Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-fugitive'
 Plug 'gregsexton/gitv'
@@ -162,6 +163,20 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
 
 call plug#end()
+
+
+" PLUGIN SETTINGS
+
+" NERDTree
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let g:NERDTreeWinSize = 30
+
+" Open NERDTree automatically when Vim starts
+autocmd VimEnter * NERDTree
+" Go to main window (don't start on NERDTree)
+autocmd VimEnter * wincmd p
+
 
 set background=dark
 colorscheme solarized
