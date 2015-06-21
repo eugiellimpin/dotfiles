@@ -189,3 +189,9 @@ nnoremap <Leader>gv :Gitv<CR>
 nnoremap <Leader>gc :Gcommit -s<CR>
 nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gw :Gwrite<CR>
+
+" Easier splits navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
