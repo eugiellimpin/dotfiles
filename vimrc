@@ -44,10 +44,7 @@ set hidden
 
 syntax on                              " Enable syntax highlighting
 
-" Change leader to a comma because the backslash is too far away. That means
-" all \x commands turn into ,x. The mapleader has to be set before vundle
-" starts loading all the plugins.
-let mapleader=","
+let mapleader="\<Space>"
 
 
 " Completion __________________________________________________________________
@@ -183,3 +180,12 @@ colorscheme solarized
 
 " Do not use fish
 set shell=/bin/bash
+
+
+" CUSTOM KEY MAPPINGS
+
+" Git
+nnoremap <Leader>gv :Gitv<CR>
+nnoremap <Leader>gc :Gcommit -s<CR>
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gw :Gwrite<CR>
