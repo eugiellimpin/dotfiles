@@ -1,3 +1,5 @@
+set -x JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home
+set PATH $PATH /Applications/grails-2.0.1/bin
 set PATH $PATH /Applications/Postgres.app/Contents/Versions/9.3/bin
 set PATH ~/.rbenv/bin $PATH
 
