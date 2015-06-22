@@ -9,6 +9,7 @@ set PATH ~/.rbenv/shims $PATH
 rbenv rehash >/dev/null ^&1
 
 # ABBREVIATIONS
+abbr -a g='git'
 abbr -a gco='git checkout'
 abbr -a gb='git branch -v'
 abbr -a gnb='git checkout -b'
@@ -18,3 +19,8 @@ abbr -a grc='git rebase --continue'
 
 abbr -a rs='rails s'
 abbr -a rc='rails c'
+
+abbr -a t='tmux'
+abbr -a tls='tmux ls'
+abbr -a td='tmux detach'
+abbr -a tas='tmux attach-session -t'
