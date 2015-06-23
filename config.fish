@@ -16,6 +16,7 @@ abbr -a gnb='git checkout -b'
 abbr -a gl='git log --pretty=oneline -n20 --graph --abbrev-commit'
 abbr -a grb='git rebase'
 abbr -a grc='git rebase --continue'
+abbr -a gs='git status'
 
 abbr -a rs='rails s'
 abbr -a rc='rails c'
