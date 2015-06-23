@@ -174,6 +174,17 @@ autocmd VimEnter * NERDTree
 " Go to main window (don't start on NERDTree)
 autocmd VimEnter * wincmd p
 
+" CTRLP
+" files to ignore
+set wildignore+=*.class
+let g:ctrlp_custom_ignore = {
+    \ 'dir': '\v[\/](\.git|build).*',
+    \ }
+" set default search mode to by filename
+let g:ctrlp_by_filename=1
+" no limit on number of files to scan
+let g:ctrlp_max_files=0
+
 
 set background=dark
 colorscheme solarized
