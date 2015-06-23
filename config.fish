@@ -25,3 +25,35 @@ abbr -a t='tmux'
 abbr -a tls='tmux ls'
 abbr -a td='tmux detach'
 abbr -a tas='tmux attach-session -t'
+
+function fish_prompt
+  set last_command_status $status
+
+  echo ''
+
+  set_color green
+  # replace entire home path with ~
+  echo -n (echo $PWD | sed 's|^'$HOME'\(.*\)$|~\1|')
+  set_color normal
+
+  set git_directory (git rev-parse --git-dir ^/dev/null)
+
+  if test $status = 0
+    echo -n ' '
+    set_color 777
+    set git_branch (git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
+
+    if test $status = 0
+      echo -n $git_branch
+    end
+
+    set -e git_branch
+    set_color normal
+  end
+ 
+  set -e git_directory
+
+  echo ''
+
+  echo -n '❯ '
+end
