@@ -158,6 +158,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'gregsexton/gitv'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
+Plug 'krisajenkins/vim-pipe'
 
 call plug#end()
 
@@ -184,6 +185,12 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_by_filename=1
 " no limit on number of files to scan
 let g:ctrlp_max_files=0
+
+" vim-pipe
+autocmd FileType sql :let b:vimpipe_command="psql -Ukagami -dkagami"
+autocmd FileType sql :let b:vimpipe_filetype="postgresql"
+" vim-postgresql-syntax
+autocmd FileType postgresql :set nowrap
 
 
 set background=dark
