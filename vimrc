@@ -159,6 +159,7 @@ Plug 'gregsexton/gitv'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
 Plug 'krisajenkins/vim-pipe'
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
 
@@ -193,8 +194,9 @@ autocmd FileType sql :let b:vimpipe_filetype="postgresql"
 autocmd FileType postgresql :set nowrap
 
 
+set t_Co=256
 set background=dark
-colorscheme solarized
+colorscheme base16-flat
 
 " Do not use fish
 set shell=/bin/bash
