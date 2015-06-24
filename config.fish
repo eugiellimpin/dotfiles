@@ -18,6 +18,7 @@ abbr -a grb='git rebase'
 abbr -a grc='git rebase --continue'
 abbr -a gs='git status'
 
+abbr -a r='rails'
 abbr -a rs='rails s'
 abbr -a rc='rails c'
 
