@@ -148,6 +148,7 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
 
+let base16colorspace=256
 
 " PLUGINS
 " Using vim-plug
@@ -197,7 +198,6 @@ autocmd FileType postgresql :set nowrap
 set t_Co=256
 set background=dark
 colorscheme base16-flat
-let base16colorspace=256
 
 " Do not use fish
 set shell=/bin/bash
