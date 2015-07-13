@@ -161,6 +161,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
 Plug 'krisajenkins/vim-pipe'
 Plug 'chriskempson/base16-vim'
+Plug 'rstacruz/sparkup'
 
 call plug#end()
 
