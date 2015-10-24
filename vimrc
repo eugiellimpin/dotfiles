@@ -180,7 +180,7 @@ autocmd VimEnter * wincmd p
 " files to ignore
 set wildignore+=*.class
 let g:ctrlp_custom_ignore = {
-    \ 'dir': '\v[\/](\.git|build|tmp).*',
+    \ 'dir': '\v[\/](\.git|build|tmp|node_modules|bower_components).*',
     \ }
 " set default search mode to by filename
 let g:ctrlp_by_filename=1
