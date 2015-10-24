@@ -148,20 +148,18 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
 
-let base16colorspace=256
-
 " PLUGINS
 " Using vim-plug
 call plug#begin('~/.vim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
-Plug 'tpope/vim-fugitive'
 Plug 'gregsexton/gitv'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'kchmck/vim-coffee-script'
 Plug 'kien/ctrlp.vim'
 Plug 'krisajenkins/vim-pipe'
-Plug 'chriskempson/base16-vim'
 Plug 'rstacruz/sparkup'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -196,9 +194,8 @@ autocmd FileType sql :let b:vimpipe_filetype="postgresql"
 autocmd FileType postgresql :set nowrap
 
 
-set t_Co=256
 set background=dark
-colorscheme base16-flat
+colorscheme solarized
 
 " Do not use fish
 set shell=/bin/bash
