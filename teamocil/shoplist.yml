@@ -1,0 +1,23 @@
+session:
+    name: 'shoplist'
+    windows:
+        - name: 'vim'
+          root: '~/projects/shoplist'
+          clear: true
+          panes:
+            - cmd: 'vim'
+        - name: 'server'
+          root: '~/projects/shoplist'
+          clear: true
+          panes:
+            - cmd: 'rails s'
+        - name: 'console'
+          root: '~/projects/shoplist'
+          clear: true
+          panes:
+            - cmd: 'rails c'
+        - name: 'term'
+          root: '~/projects/shoplist'
+          clear: true
+          panes:
+            - cmd:

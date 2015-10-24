@@ -1,0 +1,9 @@
+session:
+    name: 'quipper-servers'
+    windows:
+        - name: 'databases'
+          root: '~/Work/Quipper'
+          clear: true
+          panes:
+            - cmd: 'redis-server'
+            - cmd:

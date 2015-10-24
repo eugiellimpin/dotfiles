@@ -1,0 +1,18 @@
+session:
+    name: 'eugielimpin.com'
+    windows:
+        - name: 'vim'
+          root: '~/projects/eugielimpin.com'
+          clear: true
+          panes:
+            - cmd: 'vim'
+        - name: 'server'
+          root: '~/projects/eugielimpin.com'
+          clear: true
+          panes:
+            - cmd:
+        - name: 'shell'
+          root: '~/projects/eugielimpin.com'
+          clear: true
+          panes:
+            - cmd:

@@ -1,0 +1,13 @@
+session:
+    name: 'dotfiles'
+    windows:
+        - name: 'vim'
+          root: '~/projects/dotfiles/'
+          clear: true
+          panes:
+            - cmd: 'vim'
+        - name: 'shell'
+          root: '~/projects/dotfiles/'
+          clear: true
+          panes:
+            - cmd:
