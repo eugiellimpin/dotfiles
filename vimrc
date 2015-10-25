@@ -172,7 +172,7 @@ let NERDTreeDirArrows = 1
 let g:NERDTreeWinSize = 30
 
 " Open NERDTree automatically when Vim starts
-autocmd VimEnter * NERDTree
+"autocmd VimEnter * NERDTree
 " Go to main window (don't start on NERDTree)
 autocmd VimEnter * wincmd p
 
