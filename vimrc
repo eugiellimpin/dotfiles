@@ -87,15 +87,6 @@ if has('persistent_undo')
 endif
 
 
-" Vundle Initialization _______________________________________________________
-
-" This loads all the plugins specified in ~/.vim/vundle.vim
-" Use Vundle plugin to manage all other plugins
-if filereadable(expand("~/.vim/vundles.vim"))
-  source ~/.vim/vundles.vim
-endif
-
-
 " Scrolling ___________________________________________________________________
 
 set scrolloff=3                        " Start scrolling three lines before the
