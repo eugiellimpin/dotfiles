@@ -42,6 +42,7 @@ set visualbell                         " No sounds
 set hidden
 
 
+filetype plugin indent on
 syntax on                              " Enable syntax highlighting
 
 
