@@ -109,7 +109,7 @@ set sidescroll=1
 
 set gdefault                           " Add the g flag to search/replace by
                                        " default
-set hlsearch                           " Highlight searches
+"set hlsearch                           " Highlight searches
 set ignorecase                         " Ignore case when searching
 set incsearch                          " Highlight dynamically as a pattern is
                                        " typed
