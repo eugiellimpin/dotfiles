@@ -44,7 +44,6 @@ set hidden
 
 syntax on                              " Enable syntax highlighting
 
-let mapleader="\<Space>"
 
 
 " Completion __________________________________________________________________
@@ -126,28 +125,6 @@ set nowb
 
 " so ~/.vim/settings.vim
 
-
-
-" Strip trailing whitespace (,ss)
-function! StripWhitespace()
-	let save_cursor = getpos(".")
-	let old_query = getreg('/')
-	:%s/\s\+$//e
-	call setpos('.', save_cursor)
-	call setreg('/', old_query)
-endfunction
-noremap <leader>ss :call StripWhitespace()<CR>
-" Save a file as root (,W)
-noremap <leader>W :w !sudo tee % > /dev/null<CR>
-
-" Automatic commands
-if has("autocmd")
-	" Enable file type detection
-	filetype on
-	" Treat .json files as .js
-	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-endif
-
 " PLUGINS
 " Using vim-plug
 call plug#begin('~/.vim/plugged')
@@ -202,6 +179,7 @@ set shell=/bin/bash
 
 
 " CUSTOM KEY MAPPINGS
+let mapleader="\<Space>"
 
 " Note: comments are intentionally placed in a separate line before `*map`
 " commands because putting them on the same line will make the `*map` command
