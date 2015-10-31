@@ -203,6 +203,14 @@ set shell=/bin/bash
 
 " CUSTOM KEY MAPPINGS
 
+" Note: comments are intentionally placed in a separate line before `*map`
+" commands because putting them on the same line will make the `*map` command
+" try to interpret any blank spaces after <new command> producing uninteded
+" behavior (see http://vim.wikia.com/wiki/Avoid_the_escape_key)
+
+" Don't leave home keys. jk to leave insert mode
+inoremap jk <ESC>
+
 " Git
 nnoremap <Leader>gv :Gitv<CR>
 nnoremap <Leader>gc :Gcommit -s<CR>
