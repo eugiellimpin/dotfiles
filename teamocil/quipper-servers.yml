@@ -6,4 +6,4 @@ session:
           clear: true
           panes:
             - cmd: 'redis-server'
-            - cmd:
+            - cmd: 'mongod --config /usr/local/etc/mongod.conf'
