@@ -129,6 +129,7 @@ Plug 'krisajenkins/vim-pipe'
 Plug 'rstacruz/sparkup'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'
+Plug 'Raimondi/delimitMate'
 
 call plug#end()
 
