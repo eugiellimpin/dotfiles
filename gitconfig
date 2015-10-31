@@ -151,7 +151,10 @@
   default = simple
 
 [user]
-	name = Eugie Limpin
-	email = eugiellimpin@gmail.com
+  name = Eugie Limpin
+  email = eugiellimpin@gmail.com
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
+
+[rebase]
+  autosquash = true
