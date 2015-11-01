@@ -163,6 +163,9 @@ autocmd FileType sql :let b:vimpipe_filetype="postgresql"
 " vim-postgresql-syntax
 autocmd FileType postgresql :set nowrap
 
+" delimitMate
+let delimitMate_expand_cr = 1
+
 
 set background=dark
 colorscheme solarized
