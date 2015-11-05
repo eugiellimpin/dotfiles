@@ -166,6 +166,10 @@ autocmd FileType postgresql :set nowrap
 " delimitMate
 let delimitMate_expand_cr = 1
 
+" gitv
+let g:Gitv_DoNotMapCtrlKey = 1 " prevent gitv from remapping control commands (<C-L>, <C-K>, etc) which
+                               " conflicts with my custom window navigation mappings
+
 
 set background=dark
 colorscheme solarized
