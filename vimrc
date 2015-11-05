@@ -201,3 +201,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-Q> <C-W><C-Q>
+
+set lazyredraw " This stops Vim from redrawing the screen during complex operations and
+               " results in much smoother looking plugins.
