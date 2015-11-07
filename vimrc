@@ -179,7 +179,10 @@ set shell=/bin/bash
 
 
 " CUSTOM KEY MAPPINGS
-let mapleader="\<Space>"
+let mapleader=","
+
+" Quick Vim config reload
+nnoremap <Leader>sv :source $MYVIMRC<CR>
 
 " Note: comments are intentionally placed in a separate line before `*map`
 " commands because putting them on the same line will make the `*map` command
