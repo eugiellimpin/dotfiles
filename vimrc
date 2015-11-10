@@ -193,6 +193,8 @@ nnoremap <Leader>sv :source $MYVIMRC<CR>
 " Don't leave home keys. jk to leave insert mode
 inoremap jk <ESC>
 
+nnoremap <Leader>nt :NERDTreeToggle<CR>
+
 " Git
 nnoremap <Leader>gv :Gitv<CR>
 nnoremap <Leader>gc :Gcommit -s<CR>
