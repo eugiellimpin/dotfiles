@@ -3,9 +3,9 @@
 PROJECT_DIR=$HOME/projects/dotfiles
 
 ln -sfFhv $PROJECT_DIR/vimrc ~/.vimrc
-ln -sFfhv $PROJECT_DIR/vim/after ~/.vim/after
-ln -sFfhv $PROJECT_DIR/vim/ftdetect ~/.vim/ftdetect
-ln -sFfhv $PROJECT_DIR/teamocil ~/.teamocil
+ln -sFfhv $PROJECT_DIR/vim/after ~/.vim/after/
+ln -sFfhv $PROJECT_DIR/vim/ftdetect ~/.vim/ftdetect/
+ln -sFfhv $PROJECT_DIR/mux ~/.tmuxinator/
 ln -sfFhv $PROJECT_DIR/tmux.conf ~/.tmux.conf
 ln -sfFhv $PROJECT_DIR/tmuxcolors-solarized-dark.conf ~/.tmuxcolors-solarized-dark.conf
 ln -sfFhv $PROJECT_DIR/config.fish ~/.config/fish/config.fish
