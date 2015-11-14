@@ -135,6 +135,7 @@ Plug 'tpope/vim-endwise'
 Plug 'SirVer/ultisnips'
 Plug 'gregsexton/MatchTag'
 Plug 'matchit.zip'
+Plug 'rking/ag.vim'
 
 call plug#end()
 
@@ -161,6 +162,11 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_by_filename=1
 " no limit on number of files to scan
 let g:ctrlp_max_files=0
+" Use the_silver_search (ag) to search for files. Caveat: both
+" g:ctrlp_show_hidden and g:ctrlp_custom_ignore do not work with custom user
+" commands. So use ag's own convention for ignore files: a .agignore file that
+" follows the same conventions as .gitignore
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 " vim-pipe
 autocmd FileType sql :let b:vimpipe_command="psql -Ukagami -dkagami"
@@ -197,7 +203,11 @@ nnoremap <Leader>sv :source $MYVIMRC<CR>
 " Don't leave home keys. jk to leave insert mode
 inoremap jk <ESC>
 
+" NERDTree
 nnoremap <Leader>nt :NERDTreeToggle<CR>
+" ag.vim/the_silver_searcher
+" Space at EOL is intentional to enable typing immediately
+nnoremap <Leader>a :Ag 
 
 " Git
 nnoremap <Leader>gv :Gitv<CR>
