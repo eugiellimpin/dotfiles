@@ -142,6 +142,10 @@ call plug#end()
 
 " PLUGIN SETTINGS
 
+" vim-fugitive
+" No need to capitalize g in Git
+cabbrev git Git
+
 " NERDTree
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
