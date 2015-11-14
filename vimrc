@@ -131,6 +131,10 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-endwise'
+Plug 'SirVer/ultisnips'
+Plug 'gregsexton/MatchTag'
+Plug 'matchit.zip'
 
 call plug#end()
 
