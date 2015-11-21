@@ -156,11 +156,13 @@ let g:NERDTreeWinSize = 30
 " Go to main window (don't start on NERDTree)
 autocmd VimEnter * wincmd p
 
-" CTRLP
+" ctrlp
+" order matches from top to bottom
+let g:ctrlp_match_window = 'order:ttb'
 " set default search mode to by filename
-let g:ctrlp_by_filename=1
+let g:ctrlp_by_filename = 1
 " no limit on number of files to scan
-let g:ctrlp_max_files=0
+let g:ctrlp_max_files = 0
 " Use the_silver_search (ag) to search for files. Caveat: both
 " g:ctrlp_show_hidden and g:ctrlp_custom_ignore do not work with custom user
 " commands. So use ag's own convention for ignore files: a .agignore file that
