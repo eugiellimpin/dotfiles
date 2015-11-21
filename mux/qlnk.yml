@@ -1,7 +1,7 @@
-# ~/.tmuxinator/qlrn.yml
+# ~/.tmuxinator/qlnk.yml
 
-name: qlrn
-root: ~/Work/Quipper/video-payment-runner/repos/qlearn-web
+name: qlnk
+root: ~/Work/Quipper/qlink
 
 # Optional tmux socket
 # socket_name: foo
@@ -25,16 +25,9 @@ root: ~/Work/Quipper/video-payment-runner/repos/qlearn-web
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t qlrn
+# post: tmux -CC attach -t qlnk
 
 windows:
-  - vim-learn: vim
-  - vim-api:
-      root: ~/Work/Quipper/video-payment-runner/repos/api
-      panes:
-        - vim
-  - server:
-      root: ~/Work/Quipper/video-payment-runner
-      panes:
-        -
+  - vim: vim
+  - server: rails s
   - $: git status -s

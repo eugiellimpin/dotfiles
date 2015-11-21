@@ -1,7 +1,7 @@
-# ~/.tmuxinator/qlrn.yml
+# ~/.tmuxinator/daemons.yml
 
-name: qlrn
-root: ~/Work/Quipper/video-payment-runner/repos/qlearn-web
+name: daemons
+root: ~/
 
 # Optional tmux socket
 # socket_name: foo
@@ -25,16 +25,11 @@ root: ~/Work/Quipper/video-payment-runner/repos/qlearn-web
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t qlrn
+# post: tmux -CC attach -t daemons
 
 windows:
-  - vim-learn: vim
-  - vim-api:
-      root: ~/Work/Quipper/video-payment-runner/repos/api
+  - editor:
+      layout: main-vertical
       panes:
-        - vim
-  - server:
-      root: ~/Work/Quipper/video-payment-runner
-      panes:
-        -
-  - $: git status -s
+        - redis-server
+        - mongod --config /usr/local/etc/mongod.conf
