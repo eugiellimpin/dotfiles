@@ -1,7 +1,7 @@
 # ~/.tmuxinator/qlnk.yml
 
 name: qlnk
-root: ~/Work/Quipper/qlink
+root: <%= ENV["QUIPPER_PROJECTS_DIR"] %>/qlink
 
 # Optional tmux socket
 # socket_name: foo

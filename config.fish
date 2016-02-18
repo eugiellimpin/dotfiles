@@ -61,4 +61,5 @@ function fish_prompt
   echo -n '❯ '
 end
 
-set -x QUIPPER_PROJECTS_DIR ~/Projects
+set -x QUIPPER_PROJECTS_DIR ~/Projects/Quipper
+set -x PROJECTS_DIR ~/Projects

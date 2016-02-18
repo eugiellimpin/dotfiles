@@ -1,7 +1,7 @@
 # ~/.tmuxinator/dot.yml
 
 name: dot
-root: ~/projects/dotfiles/
+root: <%= ENV['PROJECTS_DIR'] %>/dotfiles
 
 # Optional tmux socket
 # socket_name: foo
