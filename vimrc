@@ -1,24 +1,14 @@
-" Use Vim settings, rather then Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
-
-
 " General Config ______________________________________________________________
 
-set autoread                           " Reload files changed outside Vim
-set backspace=indent,eol,start         " Allow backspace in insert mode
 set binary                             " Don’t add empty newlines at the end of
 set noeol                              " files
 set clipboard=unnamed                  " Use the OS clipboard by default (on
                                        " versions compiled with `+clipboard`)
 set cursorline                         " Highlight current line
-set encoding=utf-8 nobomb              " Use UTF-8 without BOM
 set exrc                               " Enable per-directory .vimrc files and
 set secure                             " disable unsafe commands in them
-set laststatus=2                       " Always show status line
 set modeline                           " Respect modeline in files
 set modelines=4
-set mouse=a                            " Enable mouse in all modes
 set noerrorbells                       " Disable error bells
 set nostartofline                      " Don't reset cursor to start of line
                                        " when moving around.
@@ -33,7 +23,6 @@ set showcmd                            " Show the (partial) command as it’s
                                        " being typed
 set showmode                           " Show the current mode
 set title                              " Show the filename in the window titlebar
-set ttyfast                            " Optimize for fast terminal connections
 set visualbell                         " No sounds
 
 " This makes vim act like all other editors, buffers can exist in the
@@ -46,12 +35,6 @@ filetype plugin indent on
 syntax on                              " Enable syntax highlighting
 
 
-
-" Completion __________________________________________________________________
-
-set wildmenu                           " Enhance command-line completion
-
-
 " Folds _______________________________________________________________________
 
 set foldmethod=indent                  " Fold based on indent
@@ -61,9 +44,7 @@ set nofoldenable                       " Dont fold by default
 
 " Indentation _________________________________________________________________
 
-set autoindent
 set smartindent
-set smarttab
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
@@ -100,10 +81,7 @@ set sidescroll=1
 
 set gdefault                           " Add the g flag to search/replace by
                                        " default
-"set hlsearch                           " Highlight searches
 set ignorecase                         " Ignore case when searching
-set incsearch                          " Highlight dynamically as a pattern is
-                                       " typed
 
 
 " Swap and Backup Files _______________________________________________________
