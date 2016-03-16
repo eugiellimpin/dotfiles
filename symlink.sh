@@ -11,3 +11,4 @@ ln -sfFhv $PROJECT_DIR/tmuxcolors-solarized-dark.conf ~/.tmuxcolors-solarized-da
 ln -sfFhv $PROJECT_DIR/config.fish ~/.config/fish/config.fish
 ln -sfFhv $PROJECT_DIR/gitconfig ~/.gitconfig
 ln -sfFhv $PROJECT_DIR/agignore ~/.agignore
+ln -sfFhv $PROJECT_DIR/tmuxline ~/.tmuxline

@@ -114,6 +114,7 @@ Plug 'SirVer/ultisnips'
 Plug 'gregsexton/MatchTag'
 Plug 'matchit.zip'
 Plug 'rking/ag.vim'
+Plug 'edkolev/tmuxline.vim'
 
 call plug#end()
 
