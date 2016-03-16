@@ -28,11 +28,11 @@ root: <%= ENV["QUIPPER_PROJECTS_DIR"] %>/video-payment-runner/repos/qlearn-web
 # post: tmux -CC attach -t qlrn
 
 windows:
-  - Q-Learn: vim
+  - Q-Learn: nvim
   - API:
       root: <%= ENV["QUIPPER_PROJECTS_DIR"] %>/video-payment-runner/repos/api
       panes:
-        - vim
+        - nvim
   - Server:
       root: <%= ENV["QUIPPER_PROJECTS_DIR"] %>/video-payment-runner
       panes:
