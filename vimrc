@@ -203,3 +203,9 @@ nnoremap <C-Q> <C-W><C-Q>
 
 set lazyredraw " This stops Vim from redrawing the screen during complex operations and
                " results in much smoother looking plugins.
+
+" temporary workaround to make <C-H> split navigation work until
+" https://github.com/neovim/neovim/issues/2048 is resolved
+if has('nvim')
+  nmap <BS> <C-W>h
+endif
