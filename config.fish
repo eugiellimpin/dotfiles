@@ -10,25 +10,6 @@ rbenv rehash >/dev/null ^&1
 
 set -x EDITOR vim
 
-# ABBREVIATIONS
-abbr -a g='git'
-abbr -a gco='git checkout'
-abbr -a gb='git branch -v'
-abbr -a gnb='git checkout -b'
-abbr -a gl='git log --pretty=oneline -n20 --graph --abbrev-commit'
-abbr -a grb='git rebase'
-abbr -a grc='git rebase --continue'
-abbr -a gs='git status -s'
-
-abbr -a r='rails'
-abbr -a rs='rails s'
-abbr -a rc='rails c'
-
-abbr -a t='tmux'
-abbr -a tls='tmux ls'
-abbr -a td='tmux detach'
-abbr -a tas='tmux attach-session -t'
-
 function fish_prompt
   set last_command_status $status
 
@@ -63,3 +44,21 @@ end
 
 set -x QUIPPER_PROJECTS_DIR ~/Projects/Quipper
 set -x PROJECTS_DIR ~/Projects
+
+# ABBREVIATIONS
+#abbr -a g='git'
+#abbr -a gco='git checkout'
+#abbr -a gb='git branch -v'
+#abbr -a gnb='git checkout -b'
+#abbr -a gl='git log --pretty=oneline -n20 --graph --abbrev-commit'
+#abbr -a grb='git rebase'
+#abbr -a grc='git rebase --continue'
+#
+#abbr -a r='rails'
+#abbr -a rs='rails s'
+#abbr -a rc='rails c'
+#
+#abbr -a t='tmux'
+#abbr -a tls='tmux ls'
+#abbr -a td='tmux detach'
+#abbr -a tas='tmux attach-session -t'
