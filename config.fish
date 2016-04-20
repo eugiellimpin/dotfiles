@@ -62,3 +62,5 @@ set -x PROJECTS_DIR ~/Projects
 #abbr -a tls='tmux ls'
 #abbr -a td='tmux detach'
 #abbr -a tas='tmux attach-session -t'
+
+alias vim nvim
