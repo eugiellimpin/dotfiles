@@ -28,6 +28,6 @@ root: <%= ENV["QUIPPER_PROJECTS_DIR"] %>/qlink
 # post: tmux -CC attach -t qlnk
 
 windows:
-  - Editor: vim
+  - Editor: nvim
   - Server: rails s
   - Shell: git status -s

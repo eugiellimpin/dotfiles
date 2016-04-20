@@ -1,7 +1,7 @@
-# ~/.tmuxinator/dot.yml
+# ~/.tmuxinator/new_project.yml
 
-name: dot
-root: <%= ENV['PROJECTS_DIR'] %>/dotfiles
+name: new_project
+root: ~/
 
 # Optional tmux socket
 # socket_name: foo
@@ -25,8 +25,13 @@ root: <%= ENV['PROJECTS_DIR'] %>/dotfiles
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t dot
+# post: tmux -CC attach -t new_project
 
 windows:
-  - editor: nvim
-  - $:
+  - editor:
+      layout: main-vertical
+      panes:
+        - nvim
+        - guard
+  - server: bundle exec rails s
+  - logs: tail -f log/development.log

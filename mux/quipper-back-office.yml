@@ -1,7 +1,7 @@
-# ~/.tmuxinator/dot.yml
+# ~/.tmuxinator/qseeds.yml
 
-name: dot
-root: <%= ENV['PROJECTS_DIR'] %>/dotfiles
+name: qseeds
+root: <%= ENV['QUIPPER_PROJECTS_DIR'] %>/back-office
 
 # Optional tmux socket
 # socket_name: foo
@@ -25,8 +25,9 @@ root: <%= ENV['PROJECTS_DIR'] %>/dotfiles
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t dot
+# post: tmux -CC attach -t qseeds
 
 windows:
-  - editor: nvim
-  - $:
+  - Editor: nvim
+  - Server: bundle exec rails s -p 4000
+  - Shell:

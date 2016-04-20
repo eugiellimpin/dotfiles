@@ -1,7 +1,7 @@
-# ~/.tmuxinator/dot.yml
+# ~/.tmuxinator/playground.yml
 
-name: dot
-root: <%= ENV['PROJECTS_DIR'] %>/dotfiles
+name: playground
+root: ~/
 
 # Optional tmux socket
 # socket_name: foo
@@ -25,8 +25,8 @@ root: <%= ENV['PROJECTS_DIR'] %>/dotfiles
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t dot
+# post: tmux -CC attach -t playground
 
 windows:
-  - editor: nvim
-  - $:
+  - Editor: nvim
+  - Shell: 
