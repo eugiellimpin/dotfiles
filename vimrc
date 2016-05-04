@@ -115,6 +115,8 @@ Plug 'gregsexton/MatchTag'
 Plug 'matchit.zip'
 Plug 'rking/ag.vim'
 Plug 'edkolev/tmuxline.vim'
+Plug 'thoughtbot/vim-rspec'
+Plug 'tpope/vim-dispatch'
 
 call plug#end()
 
@@ -161,6 +163,9 @@ let delimitMate_expand_cr = 1
 let g:Gitv_DoNotMapCtrlKey = 1 " prevent gitv from remapping control commands (<C-L>, <C-K>, etc) which
                                " conflicts with my custom window navigation mappings
 
+" vim-rspec
+let g:rspec_command = "Dispatch bundle exec rspec {spec}"
+
 
 set background=dark
 colorscheme solarized
@@ -201,6 +206,12 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-Q> <C-W><C-Q>
+
+" vim-rspec mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 set lazyredraw " This stops Vim from redrawing the screen during complex operations and
                " results in much smoother looking plugins.
