@@ -148,7 +148,7 @@ let g:ctrlp_max_files = 0
 " g:ctrlp_show_hidden and g:ctrlp_custom_ignore do not work with custom user
 " commands. So use ag's own convention for ignore files: a .agignore file that
 " follows the same conventions as .gitignore
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+let g:ctrlp_user_command = 'ag %s -l --hidden -g ""'
 
 " vim-pipe
 autocmd FileType sql :let b:vimpipe_command="psql -Ukagami -dkagami"
