@@ -150,12 +150,6 @@ let g:ctrlp_max_files = 0
 " follows the same conventions as .gitignore
 let g:ctrlp_user_command = 'ag %s -l --hidden -g ""'
 
-" vim-pipe
-autocmd FileType sql :let b:vimpipe_command="psql -Ukagami -dkagami"
-autocmd FileType sql :let b:vimpipe_filetype="postgresql"
-" vim-postgresql-syntax
-autocmd FileType postgresql :set nowrap
-
 " delimitMate
 let delimitMate_expand_cr = 1
 
