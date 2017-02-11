@@ -40,7 +40,7 @@ function fish_prompt
   echo -n '❯ '
 end
 
-set -x QUIPPER_PROJECTS_DIR ~/Projects/Quipper
+set -x QUIPPER_PROJECTS_DIR ~/code/Quipper
 set -x PROJECTS_DIR ~/Projects
 
 # ABBREVIATIONS

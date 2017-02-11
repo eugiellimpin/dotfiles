@@ -75,6 +75,8 @@
   # Group matches by file and prefix them with line numbers
   g = grep --break --heading --line-number
 
+  pf = push --force-with-lease
+
 [apply]
   # Detect whitespace errors when applying a patch
   whitespace = fix

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROJECT_DIR=$HOME/projects/dotfiles
+PROJECT_DIR=$HOME/code/dotfiles
 
 ln -sfFhv $PROJECT_DIR/vimrc ~/.vimrc
 ln -sFfhv $PROJECT_DIR/vim/after ~/.vim/after
@@ -12,3 +12,4 @@ ln -sfFhv $PROJECT_DIR/config.fish ~/.config/fish/config.fish
 ln -sfFhv $PROJECT_DIR/gitconfig ~/.gitconfig
 ln -sfFhv $PROJECT_DIR/agignore ~/.agignore
 ln -sfFhv $PROJECT_DIR/tmuxline ~/.tmuxline
+ln -sfFhv $PROJECT_DIR/vim/UltiSnips ~/.vim/UltiSnips

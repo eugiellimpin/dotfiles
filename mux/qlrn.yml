@@ -30,6 +30,10 @@ root: <%= ENV["QUIPPER_PROJECTS_DIR"] %>/video-payment-runner/repos/qlearn-web
 
 windows:
   - Q-Learn: nvim
+  - API:
+      root: <%= ENV["QUIPPER_PROJECTS_DIR"] %>/video-payment-runner/repos/api
+      panes:
+        - nvim
   - Video Payment:
       root: <%= ENV["QUIPPER_PROJECTS_DIR"] %>/video-payment-runner/repos/video-payment-qs
       panes:
