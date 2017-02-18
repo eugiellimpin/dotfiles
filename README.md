@@ -1,5 +1,27 @@
 # eugiellimpin does dotfiles
 
+## Applications
+
+- Fish v2.2.0
+- Neovim v0.1.7
+- Tmux v2.1
+- The Silver Searcher
+
+## Vim plugins
+
+- NerdTree
+- Ctrlp
+- Gitv
+- Sparkup
+- vim-fugitive
+- delimitmate
+- vim-surround
+- UltiSnips
+- MatchTag
+- ag.vim
+- vim-rspec
+- vim-dispatch
+
 ## dotfiles
 
 - these are my dotfiles
