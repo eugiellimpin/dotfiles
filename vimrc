@@ -160,6 +160,9 @@ let g:Gitv_DoNotMapCtrlKey = 1 " prevent gitv from remapping control commands (<
 " vim-rspec
 let g:rspec_command = "Dispatch bundle exec rspec {spec}"
 
+" UltiSnips
+let g:UltiSnipsEditSplit = 'vertical' " open a new vertical split to edit snippets when calling :UltiSnipsEdit
+
 
 set background=dark
 colorscheme solarized
