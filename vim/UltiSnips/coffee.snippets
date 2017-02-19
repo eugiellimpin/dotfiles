@@ -1,3 +1,27 @@
-snippet log "console.log( ... )"
+snippet log "console.log( ... )" b
 console.log($1)
+endsnippet
+
+snippet desc "describe block" b
+describe '$1', ->
+  $2
+endsnippet
+
+snippet ctx "context block" b
+context '$1', ->
+  $2
+endsnippet
+
+snippet be "beforeEach block" b
+beforeEach ->
+  $1
+endsnippet
+
+snippet it "it block" b
+it '${1:succeeds}', ->
+  expect($2).to$3
+endsnippet
+
+snippet stub "sinon.stub(object, method)" b
+@sinon.stub(${1:object}, '${2:method}')
 endsnippet

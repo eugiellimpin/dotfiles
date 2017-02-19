@@ -1,0 +1,41 @@
+snippet debug "puts debug" b
+puts "========================= START ========================="
+puts "${1:something}"
+puts "=========================  END  ========================="
+endsnippet
+
+snippet pry "binding.pry" b
+binding.pry
+endsnippet
+
+snippet desc "describe block" b
+describe '$1' do
+  $2
+end
+endsnippet
+
+snippet ctx "context block" b
+context '$1' do
+  $2
+end
+endsnippet
+
+snippet it "it block" b
+it '$1' do
+  expect($2)$3.to $4
+end
+endsnippet
+
+snippet expect "expectation" b
+expect($2)$3.to $4
+endsnippet
+
+snippet before "before block" b
+before do
+  $1
+end
+endsnippet
+
+snippet let "let block" b
+let(:$1) { $2 }
+endsnippet
