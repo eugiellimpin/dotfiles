@@ -34,6 +34,10 @@ set hidden
 filetype plugin indent on
 syntax on                              " Enable syntax highlighting
 
+" Use old regex engine. This improves (but does not eliminate) scroll lagging
+" because of syntax highlighting especially when opening certain ruby files
+set regexpengine=1
+
 
 " Folds _______________________________________________________________________
 
