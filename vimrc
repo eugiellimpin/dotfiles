@@ -103,24 +103,24 @@ set nowb
 " Using vim-plug
 call plug#begin('~/.vim/plugged')
 
+Plug 'Raimondi/delimitMate'
+Plug 'SirVer/ultisnips'
 Plug 'altercation/vim-colors-solarized'
+Plug 'edkolev/tmuxline.vim'
+Plug 'gregsexton/MatchTag'
 Plug 'gregsexton/gitv'
 Plug 'kchmck/vim-coffee-script'
 Plug 'kien/ctrlp.vim'
 Plug 'krisajenkins/vim-pipe'
-Plug 'rstacruz/sparkup'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'tpope/vim-fugitive'
-Plug 'Raimondi/delimitMate'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-endwise'
-Plug 'SirVer/ultisnips'
-Plug 'gregsexton/MatchTag'
 Plug 'matchit.zip'
 Plug 'rking/ag.vim'
-Plug 'edkolev/tmuxline.vim'
+Plug 'rstacruz/sparkup'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
