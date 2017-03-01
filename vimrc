@@ -136,11 +136,6 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let g:NERDTreeWinSize = 30
 
-" Open NERDTree automatically when Vim starts
-autocmd VimEnter * NERDTree
-" Go to main window (don't start on NERDTree)
-autocmd VimEnter * wincmd p
-
 " ctrlp
 " order matches from top to bottom
 let g:ctrlp_match_window = 'order:ttb'
