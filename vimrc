@@ -184,6 +184,9 @@ nnoremap <Leader>sv :source $MYVIMRC<CR>
 " Don't leave home keys. jk to leave insert mode
 inoremap jk <ESC>
 
+" Press space bar to turn off highlighting
+nnoremap <Space> :noh<CR>
+
 " NERDTree
 nnoremap <Leader>nt :NERDTreeToggle<CR>
 " ag.vim/the_silver_searcher
