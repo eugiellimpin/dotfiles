@@ -1,12 +1,10 @@
 ## Usage
 
-I tried using installation scripts from other dotfile repos in the past but
-they all proved cumbersome and complicated for my own use case. so i created a
-really simple script to symlink all my dotfiles to my home directory.
+Just symlink everything to `$HOME`
 
-run:
-
-`$ ./symlink.sh`
+```
+> ./symlink.sh
+```
 
 ## Applications
 
