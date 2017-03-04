@@ -1,11 +1,19 @@
-# eugiellimpin does dotfiles
+## Usage
+
+I tried using installation scripts from other dotfile repos in the past but
+they all proved cumbersome and complicated for my own use case. so i created a
+really simple script to symlink all my dotfiles to my home directory.
+
+run:
+
+`$ ./symlink.sh`
 
 ## Applications
 
-- Fish v2.2.0
-- Neovim v0.1.7
-- Tmux v2.1
-- The Silver Searcher
+- fish v2.2.0
+- neovim v0.1.7
+- tmux v2.1
+- the silver searcher
 
 ## Vim plugins
 
@@ -22,17 +30,3 @@
 - [vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [vim-rspec](https://github.com/thoughtbot/vim-rspec)
 - [vim-surround](https://github.com/tpope/vim-surround)
-
-## dotfiles
-
-- these are my dotfiles
-- this is also my nth time trying to commit to having an updated and complete dotfiles repo
-- this repo is for my personal use. it sucks (for now) but it works
-
-## usage
-
-i tried using installation scripts from other dotfile repos in the past but they all proved cubersome and complicated for my own use case. so i created a really simple script to symlink all my dotfiles to my home directory.
-
-run:
-
-`$ ./symlink.sh`
