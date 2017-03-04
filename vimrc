@@ -109,8 +109,9 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'edkolev/tmuxline.vim'
 Plug 'gregsexton/MatchTag'
 Plug 'gregsexton/gitv'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'kchmck/vim-coffee-script'
-Plug 'kien/ctrlp.vim'
 Plug 'krisajenkins/vim-pipe'
 Plug 'matchit.zip'
 Plug 'rking/ag.vim'
@@ -136,18 +137,8 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let g:NERDTreeWinSize = 30
 
-" ctrlp
-" order matches from top to bottom
-let g:ctrlp_match_window = 'order:ttb'
-" set default search mode to by filename
-let g:ctrlp_by_filename = 1
-" no limit on number of files to scan
-let g:ctrlp_max_files = 0
-" Use the_silver_search (ag) to search for files. Caveat: both
-" g:ctrlp_show_hidden and g:ctrlp_custom_ignore do not work with custom user
-" commands. So use ag's own convention for ignore files: a .agignore file that
-" follows the same conventions as .gitignore
-let g:ctrlp_user_command = 'ag %s -l --hidden -g ""'
+" fzf
+nnoremap <C-P> :FZF<CR>
 
 " delimitMate
 let delimitMate_expand_cr = 1
