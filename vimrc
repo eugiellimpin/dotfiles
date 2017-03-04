@@ -139,6 +139,8 @@ let g:NERDTreeWinSize = 30
 
 " fzf
 nnoremap <C-P> :FZF<CR>
+" FZF window will occupy the bottom 20% of the screen
+let g:fzf_layout = { 'down': '~20%' }
 
 " delimitMate
 let delimitMate_expand_cr = 1
