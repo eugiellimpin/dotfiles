@@ -24,6 +24,7 @@ Just symlink everything to `$HOME`
 - [nerdtree](https://github.com/scrooloose/nerdtree)
 - [sparkup](https://github.com/rstacruz/sparkup)
 - [ultisnips](https://github.com/SirVer/ultisnips)
+- [vim-commentary](https://github.com/tpope/vim-commentary)
 - [vim-dispatch](https://github.com/tpope/vim-dispatch): used to run vim-rspec asynchronously
 - [vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [vim-rspec](https://github.com/thoughtbot/vim-rspec)

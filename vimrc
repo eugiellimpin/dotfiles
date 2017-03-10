@@ -118,6 +118,7 @@ Plug 'rking/ag.vim'
 Plug 'rstacruz/sparkup'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'thoughtbot/vim-rspec'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
