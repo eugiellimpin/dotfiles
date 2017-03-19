@@ -43,10 +43,14 @@ set regexpengine=1
 
 " Folds _______________________________________________________________________
 
-set foldmethod=indent                  " Fold based on indent
-set foldnestmax=3                      " Deepest fold is 3 levels
-set nofoldenable                       " Dont fold by default
-
+" Enable folding
+set foldenable
+" Do not close all folds by default
+set foldlevel=1
+" Fold based on indent
+set foldmethod=indent
+" Deepest fold is 3 levels
+set foldnestmax=3
 
 " Indentation _________________________________________________________________
 
