@@ -41,7 +41,7 @@ syntax on                              " Enable syntax highlighting
 set regexpengine=1
 
 
-" Folds _______________________________________________________________________
+" Folds {{{
 
 " Enable folding
 set foldenable
@@ -52,7 +52,8 @@ set foldmethod=indent
 " Deepest fold is 3 levels
 set foldnestmax=3
 
-" Indentation _________________________________________________________________
+" }}}
+" Tabs, spaces and indentation {{{
 
 set smartindent
 set shiftwidth=2
@@ -63,11 +64,14 @@ set expandtab
 " Display tabs and trailing spaces visually
 set list listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_
 
+" }}}
+
+" TODO: move to relevant section. Maybe "Wrapping"?
 set nowrap                             " Don't wrap lines
 set linebreak                          " Wrap lines at convenient points
 
 
-" Persistent Undo _____________________________________________________________
+" Persistent Undo {{{
 
 " Keep undo history across sessions, by storing in file. Only works all the
 " time.
@@ -77,8 +81,8 @@ if has('persistent_undo')
   set undofile
 endif
 
-
-" Scrolling ___________________________________________________________________
+" }}}
+" Scrolling {{{
 
 set scrolloff=3                        " Start scrolling three lines before the
                                        " horizontal window border
@@ -86,27 +90,23 @@ set sidescrolloff=15                   " Start scrolling three lines before the
                                        " vertical window border
 set sidescroll=1
 
-
-" Search and Replace __________________________________________________________
+" }}}
+" Search and Replace {{{
 
 set gdefault                           " Add the g flag to search/replace by
                                        " default
 set ignorecase                         " Ignore case when searching
 
-
-" Swap and Backup Files _______________________________________________________
+" }}}
+" Swap and Backup Files {{{
 
 set noswapfile
 set nobackup
 set nowb
 
+" }}}
+" Plugins {{{
 
-" Custom Settings _____________________________________________________________
-
-" so ~/.vim/settings.vim
-
-" PLUGINS
-" Using vim-plug
 call plug#begin('~/.vim/plugged')
 
 Plug 'Raimondi/delimitMate'
@@ -132,8 +132,8 @@ Plug 'tpope/vim-surround'
 
 call plug#end()
 
-
-" PLUGIN SETTINGS
+" }}}
+" Plugin Settings {{{
 
 " vim-fugitive
 " No need to capitalize g in Git
@@ -162,15 +162,20 @@ let g:rspec_command = "Dispatch bundle exec rspec {spec}"
 " UltiSnips
 let g:UltiSnipsEditSplit = 'vertical' " open a new vertical split to edit snippets when calling :UltiSnipsEdit
 
+" }}}
+" Colors {{{
 
 set background=dark
 colorscheme solarized
+
+" }}}
 
 " Do not use fish
 set shell=/bin/bash
 
 
-" CUSTOM KEY MAPPINGS
+" Custom Mappings {{{
+
 let mapleader=","
 
 " Quick Vim config reload
@@ -211,6 +216,8 @@ map <Leader>sf :call RunCurrentSpecFile()<CR>
 map <Leader>sn :call RunNearestSpec()<CR>
 map <Leader>sl :call RunLastSpec()<CR>
 map <Leader>sa :call RunAllSpecs()<CR>
+
+" }}}
 
 set lazyredraw " This stops Vim from redrawing the screen during complex operations and
                " results in much smoother looking plugins.
