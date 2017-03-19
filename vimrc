@@ -7,8 +7,10 @@ set clipboard=unnamed                  " Use the OS clipboard by default (on
 set cursorline                         " Highlight current line
 set exrc                               " Enable per-directory .vimrc files and
 set secure                             " disable unsafe commands in them
-set modeline                           " Respect modeline in files
-set modelines=4
+" Check for modelines in files
+set modeline
+" Number of lines at the beginning and end of the file to check for modelines
+set modelines=1
 set noerrorbells                       " Disable error bells
 set nostartofline                      " Don't reset cursor to start of line
                                        " when moving around.
