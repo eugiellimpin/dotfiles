@@ -220,3 +220,10 @@ set lazyredraw " This stops Vim from redrawing the screen during complex operati
 if has('nvim')
   nmap <BS> <C-W>h
 endif
+
+" modeline to set options for this file. Specifically, set foldmethod to
+" marker so we can fold sections wrapped inside {{{ }}} (so the file reads
+" like a table of contents when opened) and foldlevel to zero to close all
+" folds by default
+"
+" vim:foldmethod=marker:foldlevel=0
