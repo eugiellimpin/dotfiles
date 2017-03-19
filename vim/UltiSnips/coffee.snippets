@@ -19,7 +19,7 @@ endsnippet
 
 snippet it "it block" b
 it '${1:succeeds}', ->
-  expect($2).to$3
+  expect(${2:true}).to.${3:eq true}
 endsnippet
 
 snippet stub "sinon.stub(object, method)" b
