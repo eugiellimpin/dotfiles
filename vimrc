@@ -1,31 +1,46 @@
 " General {{{
 
-set binary                             " Don’t add empty newlines at the end of
-set noeol                              " files
-set clipboard=unnamed                  " Use the OS clipboard by default (on
-                                       " versions compiled with `+clipboard`)
-set cursorline                         " Highlight current line
-set exrc                               " Enable per-directory .vimrc files and
-set secure                             " disable unsafe commands in them
+" Don’t add empty newlines at the end of files
+set binary
+set noeol
+
+" Use the OS clipboard by default (on versions compiled with `+clipboard`)
+set clipboard=unnamed
+
+" Highlight current line
+set cursorline
+" Enable per-directory .vimrc files and disable unsafe commands in them
+set exrc
+set secure
+
 " Check for modelines in files
 set modeline
 " Number of lines at the beginning and end of the file to check for modelines
 set modelines=1
-set noerrorbells                       " Disable error bells
-set nostartofline                      " Don't reset cursor to start of line
-                                       " when moving around.
-set number                             " Display line numbers
-if exists("&relativenumber")           " Display relative line numbers
-	set relativenumber
-	au BufReadPost * set relativenumber
+" Disable error bells
+set noerrorbells
+" Don't reset cursor to start of line when moving around.
+set nostartofline
+
+" Display line numbers
+set number
+" Display relative line numbers
+if exists("&relativenumber")
+  set relativenumber
+  au BufReadPost * set relativenumber
 endif
-set ruler                              " Show the cursor position
-set shortmess=atI                      " Don't show the intro message when starting Vim
-set showcmd                            " Show the (partial) command as it’s
-                                       " being typed
-set showmode                           " Show the current mode
-set title                              " Show the filename in the window titlebar
-set visualbell                         " No sounds
+" Show the cursor position
+set ruler
+" Don't show the intro message when starting Vim
+set shortmess=atI
+" Show the (partial) command as it’s being typed
+set showcmd
+" Show the current mode
+set showmode
+" Show the filename in the window titlebar
+set title
+" No sounds
+set visualbell
 
 " This makes vim act like all other editors, buffers can exist in the
 " background without being in a window.
@@ -34,7 +49,9 @@ set hidden
 
 
 filetype plugin indent on
-syntax on                              " Enable syntax highlighting
+" Enable syntax highlighting
+syntax on
+
 " }}}
 " Folds {{{
 
@@ -73,18 +90,19 @@ endif
 " }}}
 " Scrolling {{{
 
-set scrolloff=3                        " Start scrolling three lines before the
-                                       " horizontal window border
-set sidescrolloff=15                   " Start scrolling three lines before the
-                                       " vertical window border
+" Start scrolling three lines before the horizontal window border
+set scrolloff=3
+" Start scrolling three lines before the vertical window border
+set sidescrolloff=15
 set sidescroll=1
 
 " }}}
 " Search and Replace {{{
 
-set gdefault                           " Add the g flag to search/replace by
-                                       " default
-set ignorecase                         " Ignore case when searching
+" Add the g flag to search/replace by default
+set gdefault
+" Ignore case when searching
+set ignorecase
 
 " }}}
 " Swap and Backup Files {{{
@@ -142,14 +160,16 @@ let g:fzf_layout = { 'down': '~20%' }
 let delimitMate_expand_cr = 1
 
 " gitv
-let g:Gitv_DoNotMapCtrlKey = 1 " prevent gitv from remapping control commands (<C-L>, <C-K>, etc) which
-                               " conflicts with my custom window navigation mappings
+" Prevent gitv from remapping control commands (<C-L>, <C-K>, etc) which
+" conflicts with my custom window navigation mappings
+let g:Gitv_DoNotMapCtrlKey = 1
 
 " vim-rspec
 let g:rspec_command = "Dispatch bundle exec rspec {spec}"
 
 " UltiSnips
-let g:UltiSnipsEditSplit = 'vertical' " open a new vertical split to edit snippets when calling :UltiSnipsEdit
+" open a new vertical split to edit snippets when calling :UltiSnipsEdit
+let g:UltiSnipsEditSplit = 'vertical'
 
 " }}}
 " Colors {{{
