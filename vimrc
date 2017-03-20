@@ -45,8 +45,8 @@ set regexpengine=1
 
 " Enable folding
 set foldenable
-" Do not close all folds by default
-set foldlevel=1
+" Open folds in all levels (match foldnestmax)
+set foldlevel=3
 " Fold based on indent
 set foldmethod=indent
 " Deepest fold is 3 levels
