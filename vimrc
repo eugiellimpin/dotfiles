@@ -1,4 +1,4 @@
-" General Config ______________________________________________________________
+" General {{{
 
 set binary                             " Don’t add empty newlines at the end of
 set noeol                              " files
@@ -35,12 +35,7 @@ set hidden
 
 filetype plugin indent on
 syntax on                              " Enable syntax highlighting
-
-" Use old regex engine. This improves (but does not eliminate) scroll lagging
-" because of syntax highlighting especially when opening certain ruby files
-set regexpengine=1
-
-
+" }}}
 " Folds {{{
 
 " Enable folding
@@ -65,12 +60,6 @@ set expandtab
 set list listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_
 
 " }}}
-
-" TODO: move to relevant section. Maybe "Wrapping"?
-set nowrap                             " Don't wrap lines
-set linebreak                          " Wrap lines at convenient points
-
-
 " Persistent Undo {{{
 
 " Keep undo history across sessions, by storing in file. Only works all the
@@ -169,11 +158,6 @@ set background=dark
 colorscheme solarized
 
 " }}}
-
-" Do not use fish
-set shell=/bin/bash
-
-
 " Custom Mappings {{{
 
 let mapleader=","
@@ -218,15 +202,30 @@ map <Leader>sl :call RunLastSpec()<CR>
 map <Leader>sa :call RunAllSpecs()<CR>
 
 " }}}
+" Misc {{{
 
-set lazyredraw " This stops Vim from redrawing the screen during complex operations and
-               " results in much smoother looking plugins.
+" Explicitly set shell to avoid using Fish shell when doing :! commands
+set shell=/bin/bash
 
-" temporary workaround to make <C-H> split navigation work until
+" Stop Vim from redrawing the screen during complex operations which results
+" in much smoother looking plugins
+set lazyredraw
+
+" 'Temporary' workaround to make <C-H> split navigation work until
 " https://github.com/neovim/neovim/issues/2048 is resolved
 if has('nvim')
   nmap <BS> <C-W>h
 endif
+
+" Use old regex engine. This improves (but does not eliminate) scroll lagging
+" because of syntax highlighting especially when opening certain very large
+" Ruby files
+set regexpengine=1
+
+" }}}
+" TODO: move to relevant section. Maybe "Wrapping"?
+set nowrap                             " Don't wrap lines
+set linebreak                          " Wrap lines at convenient points
 
 " modeline to set options for this file. Specifically, set foldmethod to
 " marker so we can fold sections wrapped inside {{{ }}} (so the file reads
