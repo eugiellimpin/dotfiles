@@ -193,8 +193,8 @@ nnoremap <Leader>sv :source $MYVIMRC<CR>
 " Don't leave home keys. jk to leave insert mode
 inoremap jk <ESC>
 
-" Press space bar to turn off highlighting
-nnoremap <Space> :noh<CR>
+" Clear the highlighting of :set hlsearch
+nnoremap <Leader><Space> :nohlsearch<CR>
 
 " NERDTree
 nnoremap <Leader>nt :NERDTreeToggle<CR>
