@@ -28,4 +28,5 @@ Just symlink everything to `$HOME`
 - [vim-dispatch](https://github.com/tpope/vim-dispatch): used to run vim-rspec asynchronously
 - [vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [vim-rspec](https://github.com/thoughtbot/vim-rspec)
+- [vim-sleuth](https://github.com/tpope/vim-sleuth)
 - [vim-surround](https://github.com/tpope/vim-surround)
