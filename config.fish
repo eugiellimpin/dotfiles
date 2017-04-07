@@ -1,8 +1,8 @@
-set PATH $PATH /Applications/Postgres.app/Contents/Versions/9.3/bin
+set PATH $PATH /Applications/Postgres.app/Contents/Versions/9.5/bin
 set PATH ~/.rbenv/bin $PATH
 
-# work-around for rbenv's `rbenv init` installation step
-# see https://github.com/sstephenson/rbenv/issues/195
+# work-around for rbenv's `rbenv init` installation step see
+# https://github.com/sstephenson/rbenv/issues/195
 set PATH ~/.rbenv/shims $PATH
 rbenv rehash >/dev/null ^&1
 
@@ -41,7 +41,7 @@ function fish_prompt
 end
 
 set -x QUIPPER_PROJECTS_DIR ~/code/Quipper
-set -x PROJECTS_DIR ~/Projects
+set -x PROJECTS_DIR ~/code
 
 # ABBREVIATIONS
 #abbr -a g='git'
