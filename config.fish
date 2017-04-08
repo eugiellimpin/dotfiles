@@ -61,3 +61,10 @@ set -x PROJECTS_DIR ~/code
 #abbr -a tas='tmux attach-session -t'
 
 alias vim nvim
+
+# When hitting CTRL-C Fish will clear the prompt instead of printing ^C, a
+# newline and starting a new prompt (starting v2.4.0). See
+# https://github.com/fish-shell/fish-shell/issues/3537#issuecomment-260275405
+function fish_user_key_bindings
+  bind \cc 'commandline ""'
+end
