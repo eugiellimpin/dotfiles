@@ -1,11 +1,9 @@
+# PATH
 set PATH $PATH /Applications/Postgres.app/Contents/Versions/9.5/bin
-
 # work-around for rbenv's `rbenv init` installation step see
 # https://github.com/sstephenson/rbenv/issues/195
 set PATH ~/.rbenv/shims $PATH
 rbenv rehash >/dev/null ^&1
-
-set -x EDITOR vim
 
 function fish_prompt
   set last_command_status $status
@@ -39,9 +37,6 @@ function fish_prompt
   echo -n '❯ '
 end
 
-set -x QUIPPER_PROJECTS_DIR ~/code/Quipper
-set -x PROJECTS_DIR ~/code
-
 # ABBREVIATIONS
 #abbr -a g='git'
 #abbr -a gco='git checkout'
@@ -68,3 +63,8 @@ alias vim nvim
 function fish_user_key_bindings
   bind \cc 'commandline ""'
 end
+
+# Exports
+set --export EDITOR vim
+set --export PROJECTS_DIR ~/code
+set --export QUIPPER_PROJECTS_DIR "$PROJECTS_DIR/Quipper"
