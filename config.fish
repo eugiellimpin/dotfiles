@@ -6,35 +6,18 @@ set PATH ~/.rbenv/shims $PATH
 rbenv rehash >/dev/null ^&1
 
 function fish_prompt
-  set last_command_status $status
-
   echo ''
 
   set_color green
-  # replace entire home path with ~
+  # replace home path with ~
   echo -n (echo $PWD | sed 's|^'$HOME'\(.*\)$|~\1|')
-  set_color normal
 
-  set git_directory (git rev-parse --git-dir ^/dev/null)
+  set_color magenta
+  set -l git_branch (git branch 2> /dev/null | grep --color=never -e '*.\(.*\)' | colrm 1 2)
+  echo " $git_branch"
 
-  if test $status = 0
-    echo -n ' '
-    set_color 777
-    set git_branch (git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
-
-    if test $status = 0
-      echo -n $git_branch
-    end
-
-    set -e git_branch
-    set_color normal
-  end
- 
-  set -e git_directory
-
-  echo ''
-
-  echo -n '❯ '
+  set_color blue
+  echo -n '→ '
 end
 
 # ABBREVIATIONS
