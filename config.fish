@@ -12,7 +12,7 @@ function fish_prompt
   # replace home path with ~
   echo -n (echo $PWD | sed 's|^'$HOME'\(.*\)$|~\1|')
 
-  set_color magenta
+  set_color cyan
   set -l git_branch (git branch 2> /dev/null | grep --color=never -e '*.\(.*\)' | colrm 1 2)
   echo " $git_branch"
 
