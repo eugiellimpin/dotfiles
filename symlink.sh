@@ -13,3 +13,4 @@ ln -sfFhv $PROJECT_DIR/gitconfig ~/.gitconfig
 ln -sfFhv $PROJECT_DIR/agignore ~/.agignore
 ln -sfFhv $PROJECT_DIR/tmuxline ~/.tmuxline
 ln -sfFhv $PROJECT_DIR/vim/UltiSnips ~/.vim/UltiSnips
+ln -sfFhv $PROJECT_DIR/git_templates/hooks ~/.git_templates/hooks

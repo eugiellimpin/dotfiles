@@ -107,3 +107,5 @@
   helper = osxkeychain
 [rebase]
   autosquash = true
+[init]
+  templatedir = /Users/eugiellimpin/.git_templates

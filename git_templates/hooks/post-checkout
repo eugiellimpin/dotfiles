@@ -1,0 +1,2 @@
+#!/usr/local/bin/fish
+.git/hooks/ctags.fish >/dev/null ^&1 &
