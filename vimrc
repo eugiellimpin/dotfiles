@@ -138,6 +138,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 
 call plug#end()
 
@@ -172,6 +174,10 @@ let g:rspec_command = "Dispatch bundle exec rspec {spec}"
 " UltiSnips
 " open a new vertical split to edit snippets when calling :UltiSnipsEdit
 let g:UltiSnipsEditSplit = 'vertical'
+
+" vim-jsx
+" Enable JSX syntax highlighting and indenting on .js files
+let g:jsx_ext_required = 0
 
 " }}}
 " Colors {{{
