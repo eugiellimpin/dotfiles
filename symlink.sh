@@ -13,4 +13,7 @@ ln -sfFhv $PROJECT_DIR/gitconfig ~/.gitconfig
 ln -sfFhv $PROJECT_DIR/agignore ~/.agignore
 ln -sfFhv $PROJECT_DIR/tmuxline ~/.tmuxline
 ln -sfFhv $PROJECT_DIR/vim/UltiSnips ~/.vim/UltiSnips
-ln -sfFhv $PROJECT_DIR/git_templates/hooks ~/.git_templates/hooks
+ln -sfFhv $PROJECT_DIR/git_templates/hooks/ctags.fish ~/.git_templates/hooks/ctags.fish
+ln -sfFhv $PROJECT_DIR/git_templates/hooks/post-checkout ~/.git_templates/hooks/post-checkout
+ln -sfFhv $PROJECT_DIR/git_templates/hooks/post-commit ~/.git_templates/hooks/post-commit
+ln -sfFhv $PROJECT_DIR/git_templates/hooks/post-merge ~/.git_templates/hooks/post-merge
