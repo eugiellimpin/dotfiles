@@ -156,9 +156,11 @@ let g:NERDTreeWinSize = 30
 
 " fzf
 " Search files
-nnoremap <C-P> :FZF<CR>
+nnoremap <Leader>ff :Files<CR>
 " Search tags
-nnoremap <C-T> :Tags<CR>
+nnoremap <Leader>fa :Tags<CR>
+" Search a string
+nnoremap <Leader>fa :Ag<CR>
 " FZF window will occupy the bottom 20% of the screen
 let g:fzf_layout = { 'down': '~20%' }
 
