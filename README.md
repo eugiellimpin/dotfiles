@@ -15,7 +15,6 @@ Just symlink everything to `$HOME`
 
 ## Vim plugins
 
-- [ag.vim](https://github.com/rking/ag.vim)
 - [delimitmate](https://github.com/Raimondi/delimitMate)
 - [fzf.vim](https://github.com/junegunn/fzf.vim)
 - [fzf](https://github.com/junegunn/fzf)

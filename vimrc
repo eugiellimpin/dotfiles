@@ -127,7 +127,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'krisajenkins/vim-pipe'
 Plug 'matchit.zip'
-Plug 'rking/ag.vim'
 Plug 'rstacruz/sparkup'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'thoughtbot/vim-rspec'
@@ -209,9 +208,6 @@ nnoremap <Leader><Space> :nohlsearch<CR>
 
 " NERDTree
 nnoremap <Leader>nt :NERDTreeToggle<CR>
-" ag.vim/the_silver_searcher
-" Space at EOL is intentional to enable typing immediately
-nnoremap <Leader>a :Ag 
 
 " Git
 nnoremap <Leader>gv :Gitv<CR>
