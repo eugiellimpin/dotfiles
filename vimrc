@@ -117,7 +117,6 @@ set nowb
 call plug#begin('~/.vim/plugged')
 
 Plug 'Raimondi/delimitMate'
-Plug 'SirVer/ultisnips'
 Plug 'altercation/vim-colors-solarized'
 Plug 'edkolev/tmuxline.vim'
 Plug 'gregsexton/MatchTag'
