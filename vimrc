@@ -157,7 +157,7 @@ let g:NERDTreeWinSize = 30
 " Search files
 nnoremap <Leader>ff :Files<CR>
 " Search tags
-nnoremap <Leader>fa :Tags<CR>
+nnoremap <Leader>ft :Tags<CR>
 " Search a string
 nnoremap <Leader>fa :Ag<CR>
 " FZF window will occupy the bottom 20% of the screen
