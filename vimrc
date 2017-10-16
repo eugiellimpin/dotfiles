@@ -154,12 +154,6 @@ let NERDTreeDirArrows = 1
 let g:NERDTreeWinSize = 30
 
 " fzf
-" Search files
-nnoremap <Leader>ff :Files<CR>
-" Search tags
-nnoremap <Leader>ft :Tags<CR>
-" Search a string
-nnoremap <Leader>fa :Ag<CR>
 " FZF window will occupy the bottom 20% of the screen
 let g:fzf_layout = { 'down': '~20%' }
 
@@ -191,31 +185,19 @@ colorscheme solarized
 " }}}
 " Custom Mappings {{{
 
-let mapleader=","
-
-" Quick Vim config reload
-nnoremap <Leader>sv :source $MYVIMRC<CR>
-
 " Note: comments are intentionally placed in a separate line before `*map`
 " commands because putting them on the same line will make the `*map` command
 " try to interpret any blank spaces after <new command> producing uninteded
 " behavior (see http://vim.wikia.com/wiki/Avoid_the_escape_key)
 
+let mapleader=","
+
+" Quick Vim config reload
+nnoremap <Leader>sv :source $MYVIMRC<CR>
+
 " Don't leave home keys. jk to leave insert mode
 inoremap jk <ESC>
-
-" Clear the highlighting of :set hlsearch
-nnoremap <Leader><Space> :nohlsearch<CR>
-
-" NERDTree
-nnoremap <Leader>nt :NERDTreeToggle<CR>
-
-" Git
-nnoremap <Leader>gv :Gitv<CR>
-nnoremap <Leader>gc :Gcommit -s<CR>
-nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gw :Gwrite<CR>
-
+"
 " Easier splits navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -223,12 +205,31 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-Q> <C-W><C-Q>
 
-" vim-rspec mappings
+" Clear the highlighting of :set hlsearch
+nnoremap <Leader><Space> :nohlsearch<CR>
+
+" NERDTree
+nnoremap <Leader>nt :NERDTreeToggle<CR>
+
+" fugitive
+nnoremap <Leader>gv :Gitv<CR>
+nnoremap <Leader>gc :Gcommit -s<CR>
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gw :Gwrite<CR>
+
+" vim-rspec
 map <Leader>sf :call RunCurrentSpecFile()<CR>
 map <Leader>sn :call RunNearestSpec()<CR>
 map <Leader>sl :call RunLastSpec()<CR>
 map <Leader>sa :call RunAllSpecs()<CR>
 
+" fzf
+" Search files
+nnoremap <Leader>ff :Files<CR>
+" Search tags
+nnoremap <Leader>ft :Tags<CR>
+" Search a string
+nnoremap <Leader>fa :Ag<CR>
 " }}}
 " Misc {{{
 
